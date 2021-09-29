@@ -1,4 +1,4 @@
-package com.github.pxzxj;
+package io.github.pxzxj;
 
 import org.asciidoctor.Asciidoctor;
 import org.asciidoctor.extension.JavaExtensionRegistry;

@@ -1,4 +1,4 @@
-package com.github.pxzxj;
+package io.github.pxzxj;
 
 import org.asciidoctor.ast.StructuralNode;
 import org.asciidoctor.extension.BlockMacroProcessor;
