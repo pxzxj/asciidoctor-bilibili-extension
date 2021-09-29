@@ -1,1 +1,29 @@
-= asciidoctor-bilibili-extensions
+= asciidoctor-bilibili-extension
+
+== 简介
+
+使用asciidoc编写文档时有时需要插入视频用于解释文档中的内容或者是作为引用内容供读者自行访问，asciidoctor默认支持 https://docs.asciidoctor.org/asciidoc/latest/macros/audio-and-video/[插入youtube和vimeo视频内容]，而中国开发者更多会使用Bilibili进行内容传播或分享，因此开发此插件用于在asciidoc文档中插入Bilibili视频
+
+== 使用方法
+
+在asciidoc文档中使用bilibili宏加上BV号即可，支持使用width和height配置播放器的宽和高，默认为640x480
+
+[source,asciidoc]
+----
+bilibili::BV1gt411f7H4[width=800,height=600]
+----
+
+之后就可以使用asciidoctor的maven插件生成带有bilibili视频的html文件了
+
+
+
+== 示例
+
+待添加
+
+
+
+== 实现原理
+
+
+参考 https://docs.asciidoctor.org/asciidoctorj/latest/extensions/extensions-introduction/[AsciidoctorJ Extensions API]
