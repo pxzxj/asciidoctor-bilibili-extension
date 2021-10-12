@@ -6,22 +6,29 @@
 
 == 使用方法
 
-在asciidoc文档中使用bilibili宏加上BV号即可，支持使用width和height配置播放器的宽和高，默认为640x480
+在asciidoc文档中使用bilibili宏加上BV号即可，支持使用width和height配置播放器的宽和高，默认为640x480，也可以在视频上方添加标题
 
 [source,asciidoc]
 ----
+.哔哩哔哩示例
 bilibili::BV1gt411f7H4[width=800,height=600]
 ----
 
-之后就可以使用asciidoctor的maven插件生成带有bilibili视频的html文件了
+然后在asciidoctor-maven插件配置中添加如下 https://mvnrepository.com/artifact/io.github.pxzxj/asciidoctor-bilibili-extension/1.0[依赖]
 
+[source,xml,subs="verbatim"]
+----
+<dependency>
+    <groupId>io.github.pxzxj</groupId>
+    <artifactId>asciidoctor-bilibili-extension</artifactId>
+    <version>1.0</version>
+</dependency>
 
+----
 
-== 示例
+之后maven compile就可以生成包含bilibili视频的html文档了，完整示例参考 https://github.com/pxzxj/asciidoc-cicd-demo[asciidoc-cicd-demo]
 
-待添加
-
-
+image::sample.jpg[]
 
 == 实现原理
 
